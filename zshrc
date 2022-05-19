@@ -5,9 +5,9 @@ ZSH_DISABLE_COMPFIX=true
 
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
+export PATH="/usr/local/opt/python@3.10/bin:$PATH"
 
 # Path to your oh-my-zsh installation.
-
 export ZSH="/Users/callummccann/.oh-my-zsh"
 # ZSH_CUSTOM="/Users/callummccann/repos/community_dotfiles/oh-my-zsh"
 
