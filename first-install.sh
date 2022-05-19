@@ -34,14 +34,21 @@ brew tap microsoft/git
 brew install --cask git-credential-manager-core
 
 ## Entering in the git username if not exists
-echo "Configuring git name globally "
-read  "gitusername?Enter git user.name"
-git config --global user.name $gitusername;
+if git config --global user.name > /dev/null; then
+    echo "--- user.name set to `git config --global user.name`"
+else
+    echo "--- Your full name: First Last"
+    read FULL_NAME
+    git config --global user.name "$FULL_NAME"
+fi
 
-## Entering in the git email if not exists
-echo "Configuring git email globally"
-read  "gituseremail?Enter git user.email" 
-git config --global user.email $gituseremail;
+if git config --global user.email > /dev/null; then
+    echo "--- user.email set to `git config --global user.email`"
+else
+    echo "--- Your github account email address"
+    read GIT_EMAIL
+    git config --global user.email "$GIT_EMAIL"
+fi
 
 ## Setting default branch to main
 git config --global init.defaultBranch main
@@ -57,7 +64,8 @@ cd repos
 # Remove the dotfiles repo if it already exists and restore from the source
 if ! git clone "https://github.com/callum-mcdata/community_dotfiles.git" "community_dotfiles" 2>/dev/null && [ -d "community_dotfiles" ] ; 
   then echo "Clone failed because the folder community_dotfiles exists";
-  else echo "something went wrong";
+  else git clone "https://github.com/callum-mcdata/community_dotfiles.git" "community_dotfiles"
+  echo "something went wrong";
 fi
 
 cd community_dotfiles
