@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "dbt-latest"
+version = "0.1.0"
+description = "This folder contains the environment for the latest stable dbt release"
+authors = ["Callum McCann <cmccann51@gmail.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+dbt-snowflake = "^1.1.0"
+dbt-bigquery = "^1.1.0"
+dbt-redshift = "^1.1.0"
+dbt-spark = "^1.1.0"
+
+[tool.poetry.dev-dependencies]
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"

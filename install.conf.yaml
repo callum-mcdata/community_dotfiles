@@ -16,6 +16,7 @@
 
 - shell:
   - [brew bundle, Installing Homebrew formulas from Brewfile]
+  - [poetry config virtualenvs.in-project true]
 
 - link:
     # ~/.gitconfig: 

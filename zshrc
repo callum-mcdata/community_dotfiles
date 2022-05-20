@@ -8,7 +8,8 @@ ZSH_DISABLE_COMPFIX=true
 export PATH="/usr/local/opt/python@3.10/bin:$PATH"
 
 # Path to your oh-my-zsh installation.
-export ZSH="/Users/callummccann/.oh-my-zsh"
+
+export ZSH="/Users/${USER}/.oh-my-zsh"
 # ZSH_CUSTOM="/Users/callummccann/repos/community_dotfiles/oh-my-zsh"
 
 # Set name of the theme to load --- if set to "random", it will
@@ -107,6 +108,8 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+alias dbt-prerelease="source /Users/${USER}/repos/community_dotfiles/poetry_environments/dbt-prerelease/.venv/bin/activate"
+alias dbt-latest="source /Users/${USER}/repos/community_dotfiles/poetry_environments/dbt-latest/.venv/bin/activate"
 
 # Personal alias files are kept in dotfiles/oh-my-zsh
 
