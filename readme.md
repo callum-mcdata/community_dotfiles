@@ -57,6 +57,10 @@ in a format that is conduvice to dbt development.
 - **vscode/settings.json**: The settings.json contains settings that overwrite the default settings in VSCode. We recommend the ones contained within this file
 ### Terminal Completions
 - **oh-my-zsh/completions/_dbt**: This file contains some autocompletion scripts for dbt command line interaction
+### Virtual Environments
+- **poetry_environments/dbt-latest**: This folder contains everything (including the virtual environment) for the latest stable dbt version. This is what we'll use for developing!
+- **poetry_environments/dbt-prerelease**: This folder contains everything (including the virtual environment) for the latest prerelease (or stable if there is no current pre-release) dbt version. This is what we'll use for testing!
+
 
 # Installation!
 Should I have hidden installation behind that wall of text? Probably not, but hey, 
@@ -81,7 +85,7 @@ and the latter is for Intel based Macs.
     a. If installing for the first time, copy the raw code from this script and paste
     in your iTerm (Rosetta) terminal. Then hit enter. 
 
-3. You should have everything that you need!
+3. Begin developing! 
     a. If you ever want to make changes in the future to your configuration, navigate
     to the repository and make changes to the files contained. 
 
@@ -90,7 +94,20 @@ and the latter is for Intel based Macs.
     a. On installation, it may inform you that you need to install command line 
     developer tools. Feel free to install these.
 
+2. Run the first-install.sh script
+    a. If installing for the first time, copy the raw code from this script and paste
+    in your iTerm terminal. Then hit enter. 
 
+3. Begin developing! 
+
+## Development & Environments
+Once you've got your computer, terminal, and IDE set up with this code, you'll want to begin development. If you run `dbt --version` from the base terminal, you'll notice that the commands fails. What? Why would you do that Callum - why would you deliberately set me up for failure?
+
+Worry not! dbt is definitely installed but we've used a wonderful package called `poetry` to manage our environments. This allows us to have multiple versions of dbt without worrying about overlapping installations and commands failing. 
+
+In order to activate these environments, we've created two new terminal commands that you can use:
+- `dbt-latest` : This command will activate the virtual environment with the latest stable dbt version! 
+- `dbt-prerelease` : This command will activate the virtual environment with the latest pre-release dbt version!
 
 # Shoutouts!
 This repository wouldn't be possible without the help from 2 major people:
