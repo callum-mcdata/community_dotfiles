@@ -72,9 +72,11 @@ and the latter is for Intel based Macs.
 
 ### M1 Macs:
 1. Download [iTerm2](https://iterm2.com/). 
-    a. On installation, it may inform you that you need to install command line 
+
+    - On installation, it may inform you that you need to install command line 
     developer tools. Feel free to install these.
-    b. Open Applications in Finder and find iTerm. `Duplicate` this application. On
+    
+    - Open Applications in Finder and find iTerm. `Duplicate` this application. On
     the duplicate version, select `Get Info` and check `Open using Rosetta`. Rename
     the application to `iTerm (Rosetta)`. 
         - Why are we doing this? M1 Macs don't use the same chip architecture as 
@@ -82,20 +84,20 @@ and the latter is for Intel based Macs.
         is a workaround. 
 
 2. Run the first-install.sh script. 
-    a. If installing for the first time, copy the raw code from this script and paste
+    - If installing for the first time, copy the raw code from this script and paste
     in your iTerm (Rosetta) terminal. Then hit enter. 
 
 3. Begin developing! 
-    a. If you ever want to make changes in the future to your configuration, navigate
+    - If you ever want to make changes in the future to your configuration, navigate
     to the repository and make changes to the files contained. 
 
 ### Intel Macs:
 1. Download [iTerm2](https://iterm2.com/). 
-    a. On installation, it may inform you that you need to install command line 
+    - On installation, it may inform you that you need to install command line 
     developer tools. Feel free to install these.
 
 2. Run the first-install.sh script
-    a. If installing for the first time, copy the raw code from this script and paste
+    - If installing for the first time, copy the raw code from this script and paste
     in your iTerm terminal. Then hit enter. 
 
 3. Begin developing! 
