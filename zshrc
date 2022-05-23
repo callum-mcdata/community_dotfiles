@@ -110,6 +110,7 @@ source $ZSH/oh-my-zsh.sh
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias dbt-prerelease="source /Users/${USER}/repos/community_dotfiles/poetry_environments/dbt-prerelease/.venv/bin/activate"
 alias dbt-latest="source /Users/${USER}/repos/community_dotfiles/poetry_environments/dbt-latest/.venv/bin/activate"
+alias dbt-package-development="source /Users/${USER}/repos/community_dotfiles/poetry_environments/dbt-package-development/.venv/bin/activate"
 
 # Personal alias files are kept in dotfiles/oh-my-zsh
 

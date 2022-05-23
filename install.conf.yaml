@@ -35,6 +35,6 @@
       path: vscode/settings.json
 
 - shell:
-  - [cd repos/community_dotfiles/poetry_environments/dbt-latest/ && poetry install]
-  - [cd]
-  - [cd repos/community_dotfiles/poetry_environments/dbt-prerelease/ && poetry install]
+  - [cd && cd repos/community_dotfiles/poetry_environments/dbt-latest && poetry install]
+  - [cd && cd repos/community_dotfiles/poetry_environments/dbt-prerelease && poetry install]
+  - [cd && cd repos/community_dotfiles/poetry_environments/dbt-package-development && poetry install]
